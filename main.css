@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 7px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 7px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: white;
+  background-color: #e91e63;
+  cursor: pointer;
+}
+
+.tasks {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.delete {
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
